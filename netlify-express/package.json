@@ -1,0 +1,41 @@
+{
+  "name": "netlify-react-express",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Esau Silva (@_esausilva)",
+    "url": "https://esausilva.com"
+  },
+  "scripts": {
+    "start": "run-p start:**",
+    "start:lambda": "netlify-lambda serve api",
+    "start:app": "cd client && yarn start",
+    "build": "run-p build:**",
+    "build:lambda": "netlify-lambda build api",
+    "build:app": "cd client && yarn build",
+    "deploy:draft": "netlify deploy --dir=client/build --functions=functions",
+    "deploy:prod": "netlify deploy --dir=client/build --functions=functions --prod"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "serverless-http": "^1.8.0"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.1.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esausilva/react-production-deployment"
+  },
+  "bugs": {
+    "url": "https://github.com/esausilva/react-production-deployment/issues"
+  },
+  "keywords": [
+    "netlify",
+    "express",
+    "create-react-app",
+    "react"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "netlify-react-express-2",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Esau Silva (@_esausilva)",
+    "url": "https://esausilva.com"
+  },
+  "scripts": {
+    "start": "run-p start:**",
+    "start:app": "react-scripts start",
+    "start:lambda": "netlify-lambda serve src/api",
+    "build": "run-p build:**",
+    "build:app": "react-scripts build",
+    "build:lambda": "netlify-lambda build src/api",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy:draft": "netlify deploy --dir=build --functions=functions",
+    "deploy:prod": "netlify deploy --dir=build --functions=functions --prod"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "dependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-transform-object-assign": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "http-proxy-middleware": "0.19.0",
+    "netlify-lambda": "^1.1.1",
+    "npm-run-all": "^4.1.5",
+    "serverless-http": "^1.8.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esausilva/react-production-deployment"
+  },
+  "bugs": {
+    "url": "https://github.com/esausilva/react-production-deployment/issues"
+  },
+  "keywords": [
+    "netlify",
+    "express",
+    "create-react-app",
+    "react"
+  ]
+}

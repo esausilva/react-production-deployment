@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "cra-prod-deployment",
+  "public": false,
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" },
+    { "src": "/api/server.js", "use": "@now/node-server" }
+  ],
+  "routes": [
+    { "src": "/api/.*", "dest": "/api/server.js" },
+    { "src": "^/static/(.*)", "dest": "/static/$1" },
+    { "src": ".*", "dest": "/index.html" }
+  ]
+}
