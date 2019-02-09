@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "cra-prod-deployment",
+  "name": "create-react-app-express",
   "public": false,
   "builds": [
     { "src": "package.json", "use": "@now/static-build" },
