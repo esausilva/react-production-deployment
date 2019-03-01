@@ -1,1 +1,33 @@
-Soon...
+# React Production Deployment
+
+The repo contains examples on how to deploy your React application to Netlify, Now and Heroku.
+
+Each directory is a separate project containing all the necessary code to deploy to each platform and we deploy the same app to the different platforms.
+
+## The App
+
+The React app is very basic in nature, it calls an Express.js API with only one `POST` route and one `GET` route.
+
+The `GET` route returns _“Hello from Express”_ and the `POST` route is just one field that when posting it returns _“I received your POST request. This is what you sent me: [from input]”_.
+
+The app also has client side routing with React Router that navigates to a secondary page and displays a _404 page_ when we enter a URL that does not exist.
+
+You can see the app below
+
+![React Production Deploy Demo App](https://i.imgur.com/AcPRAN1.gif 'React Production Deploy Demo App')
+
+Upon loading, React calls the Express.js `GET` endpoint and displays a message. When submitting the single field form, React calls the Express.js `POST` endpoint and displays a message.
+
+## The Tutorials
+
+- [Netlify](https://blog.bitsrc.io/react-production-deployment-part-1-netlify-703686631dd1)
+- [Now](https://blog.bitsrc.io/react-production-deployment-part-2-now-c81657c700b7)
+- [Heroku](https://blog.bitsrc.io/react-production-deployment-part-3-heroku-316319744885)
+
+## Giving Back
+
+If you would like to support my work and the time I put in making tutorials, you can click the image below to get me a coffee. I would really appreciate it (but is not required).
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/esausilva)
+
+-Esau
