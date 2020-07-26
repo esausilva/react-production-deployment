@@ -20,7 +20,7 @@ Upon loading, React calls the Express.js and/or Lambda Function `GET` endpoint a
 
 ## The Tutorials
 
-- [Netlify](https://esausilva.com/2020/07/25/deploy-a-production-react-app-to-netlify/)
+- [Netlify](https://esausilva.com/2020/07/26/deploy-a-production-react-app-to-netlify/)
 - [Vercel](https://esausilva.com/2020/07/26/deploy-a-production-react-app-to-vercel/)
 - [Heroku](https://esausilva.com/2020/07/26/deploy-a-production-react-app-to-heroku/)
 
