@@ -6,7 +6,7 @@ Each directory is a separate project containing all the necessary code to deploy
 
 ## The App
 
-The React app is very basic in nature, it calls an Express.js API with only one `POST` route and one `GET` route.
+The React app is very basic in nature, it calls an Express.js and/or Lambda Functions API with only one `POST` route and one `GET` route.
 
 The `GET` route returns _“Hello from Express”_ and the `POST` route is just one field that when posting it returns _“I received your POST request. This is what you sent me: [from input]”_.
 
@@ -14,15 +14,15 @@ The app also has client side routing with React Router that navigates to a secon
 
 You can see the app below
 
-![React Production Deploy Demo App](https://i.imgur.com/AcPRAN1.gif 'React Production Deploy Demo App')
+![React Production Deploy Demo App](https://i.imgur.com/AcPRAN1.gif "React Production Deploy Demo App")
 
-Upon loading, React calls the Express.js `GET` endpoint and displays a message. When submitting the single field form, React calls the Express.js `POST` endpoint and displays a message.
+Upon loading, React calls the Express.js and/or Lambda Function `GET` endpoint and displays a message. When submitting the single field form, React calls the Express.js and/or Lambda Function `POST` endpoint and displays a message.
 
 ## The Tutorials
 
-- [Netlify](https://blog.bitsrc.io/react-production-deployment-part-1-netlify-703686631dd1)
-- [Now](https://blog.bitsrc.io/react-production-deployment-part-2-now-c81657c700b7)
-- [Heroku](https://blog.bitsrc.io/react-production-deployment-part-3-heroku-316319744885)
+- [Netlify](https://esausilva.com/2020/07/25/deploy-a-production-react-app-to-netlify/)
+- [Vercel](https://esausilva.com/2020/07/26/deploy-a-production-react-app-to-vercel/)
+- [Heroku](https://esausilva.com/2020/07/26/deploy-a-production-react-app-to-heroku/)
 
 ## Giving Back
 
