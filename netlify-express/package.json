@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "serverless-http": "^2.3.2"
   },
   "devDependencies": {
